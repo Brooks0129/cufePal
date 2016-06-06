@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="xiaoqu">
+		<item></item>
+		<item>学院南路校区</item>
+		<item>沙河校区</item>
+		<item>沙河校区-西</item>
+	</string-array>
+	<string-array name="jiaoshileibie">
+		<item></item>
+		<item>学院南路校区</item>
+		<item>沙河校区</item>
+		<item>沙河校区-西</item>
+	</string-array>
+</resources>

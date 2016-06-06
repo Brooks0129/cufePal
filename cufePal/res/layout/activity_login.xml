@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/splash_color"
+	tools:context="${relativePackage}.${activityClass}" >
+	<ImageView
+		android:id="@+id/logo"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentTop="true"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="30dp"
+		android:background="@drawable/icon" />
+	<EditText
+		android:id="@+id/username"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/logo"
+		android:layout_marginBottom="2dp"
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp"
+		android:layout_marginTop="50dp"
+		android:background="@drawable/more_item_press"
+		android:drawableLeft="@drawable/username"
+		android:hint="教务处账号"
+		android:padding="5dp"
+		android:paddingLeft="10dp"
+		android:textColor="#99000000"
+		android:textColorHint="#99000000" />
+	<EditText
+		android:id="@+id/password"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/username"
+		android:layout_margin="10dp"
+		android:layout_marginTop="2dp"
+		android:background="@drawable/more_item_press"
+		android:drawableLeft="@drawable/password"
+		android:hint="教务处密码"
+		android:padding="5dp"
+		android:paddingLeft="10dp"
+		android:password="true"
+		android:textColor="#99000000"
+		android:textColorHint="#99000000" />
+	<LinearLayout
+		android:id="@+id/ll_code"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/password"
+		android:layout_margin="10dp"
+		android:orientation="horizontal"
+		android:visibility="visible" >
+		<EditText
+			android:id="@+id/secrectCode"
+			android:layout_width="100dp"
+			android:layout_height="wrap_content"
+			android:background="@drawable/more_item_press"
+			android:hint="验证码"
+			android:imeOptions="actionDone"
+			android:padding="5dp"
+			android:textColor="#99000000"
+			android:textColorHint="#99000000" />
+		<ImageView
+			android:id="@+id/codeImage"
+			android:layout_width="72dp"
+			android:layout_height="36dp"
+			android:layout_gravity="center"
+			android:layout_marginLeft="10dp"
+			android:layout_marginRight="10dp"
+			android:scaleType="fitStart" />
+		<Button
+			android:id="@+id/getCode"
+			android:layout_width="100dp"
+			android:layout_height="40dp"
+			android:layout_gravity="center_vertical"
+			android:background="@drawable/btn_login_selector"
+			android:text="刷新验证码"
+			android:textSize="14sp"
+			android:textColor="#fff" />
+	</LinearLayout>
+	<Button
+		android:id="@+id/login"
+		android:layout_width="280dp"
+		android:layout_height="45dp"
+		android:layout_alignParentBottom="true"
+		android:layout_below="@drawable/password"
+		android:layout_centerHorizontal="true"
+		android:layout_marginBottom="30dp"
+		android:background="@drawable/btn_login_selector"
+		android:text="登录"
+		android:textColor="@drawable/button_font"
+		android:textSize="16sp" />
+</RelativeLayout>

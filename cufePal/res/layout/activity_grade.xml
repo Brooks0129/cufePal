@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#EED2EE"
+	android:orientation="vertical" >
+	<include layout="@layout/toolbar" />
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal" >
+		<Button
+			android:id="@+id/bt_lncj"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:background="@drawable/btn_login_selector"
+			android:text="历年成绩" />
+		<View
+			android:layout_width="1px"
+			android:layout_height="20dp"
+			android:layout_gravity="center_vertical"
+			android:background="#123456" />
+		<Button
+			android:id="@+id/bt_cjtj"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:background="@drawable/btn_login_selector"
+			android:text="成绩统计" />
+	</LinearLayout>
+	<LinearLayout
+		android:id="@+id/ll_lncj"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:visibility="gone" >
+		<TextView
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_marginRight="5dp"
+			android:layout_weight="2"
+			android:text="课程名称"
+			android:textColor="#000000"
+			android:textSize="15sp"
+			android:textStyle="bold" />
+		<TextView
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_marginRight="5dp"
+			android:layout_weight="1"
+			android:text="课程性质"
+			android:textColor="#000000"
+			android:textSize="15sp" />
+		<TextView
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_marginRight="5dp"
+			android:layout_weight="1"
+			android:text="学分"
+			android:textColor="#000000"
+			android:textSize="15sp" />
+		<TextView
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_marginRight="5dp"
+			android:layout_weight="1"
+			android:text="绩点"
+			android:textColor="#000000"
+			android:textSize="15sp" />
+		<TextView
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_marginRight="5dp"
+			android:layout_weight="1"
+			android:text="等级"
+			android:textColor="#000000"
+			android:textSize="15sp" />
+		<TextView
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:text="分数"
+			android:textColor="#000000"
+			android:textSize="15sp" />
+	</LinearLayout>
+	<ListView
+		android:id="@+id/lv_lncj"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:visibility="gone" >
+	</ListView>
+	<LinearLayout
+		android:id="@+id/ll_cjtj"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:orientation="vertical"
+		android:visibility="gone" >
+		<TextView
+			android:id="@+id/tv_zyzrs"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textColor="#000000" />
+		<TextView
+			android:id="@+id/tv_pjxfjd"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textColor="#000000" />
+		<TextView
+			android:id="@+id/tv_xfjdzh"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textColor="#000000" />
+	</LinearLayout>
+</LinearLayout>

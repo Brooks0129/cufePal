@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="120dp"
+	android:layout_margin="5dp"
+	android:orientation="vertical"
+	android:padding="5dp" >
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"
+		android:orientation="horizontal" >
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="考试科目： "
+			android:textColor="#FF8247"
+			android:textSize="18sp" />
+		<TextView
+			android:id="@+id/tv_exam_name"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="未知"
+			android:textColor="#000000"
+			android:textSize="20sp" />
+	</LinearLayout>
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal" >
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="考试时间：  "
+			android:textColor="#FF8247"
+			android:textSize="18sp" />
+		<TextView
+			android:id="@+id/tv_exam_time"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="未知"
+			android:textColor="#000000"
+			android:textSize="18sp" />
+	</LinearLayout>
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal" >
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="考试地点：  "
+			android:textColor="#FF8247"
+			android:textSize="18sp" />
+		<TextView
+			android:id="@+id/tv_exam_location"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="未知"
+			android:textColor="#000000"
+			android:textSize="18sp" />
+	</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#FF7F50"
+	android:orientation="vertical" >
+	<include layout="@layout/toolbar" />
+	<ScrollView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:layout_marginTop="10dp"
+		android:scrollbars="vertical" >
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical" >
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_horizontal"
+				android:orientation="horizontal" >
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_vertical"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="50dp"
+					android:text="校区"
+					android:textSize="18sp" />
+				<Button
+					android:id="@+id/bt_xq"
+					android:layout_width="150dp"
+					android:layout_height="wrap_content"
+					android:background="#66ffffff"
+					android:textColor="#ffffff"
+					android:textSize="18sp" />
+			</LinearLayout>
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_horizontal"
+				android:layout_marginTop="10dp"
+				android:orientation="horizontal" >
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_vertical"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="16dp"
+					android:text="教室类别"
+					android:textSize="18sp" />
+				<Button
+					android:id="@+id/bt_jslb"
+					android:layout_width="150dp"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_vertical"
+					android:background="#66ffffff"
+					android:textColor="#ffffff"
+					android:textSize="18sp" />
+			</LinearLayout>
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_horizontal"
+				android:focusable="true"
+				android:focusableInTouchMode="true"
+				android:orientation="horizontal" >
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_vertical"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="5dp"
+					android:text="座位数 >="
+					android:textSize="18sp" />
+				<EditText
+					android:id="@+id/min_zws"
+					android:layout_width="50dp"
+					android:layout_height="wrap_content"
+					android:layout_marginRight="1dp"
+					android:text="0" />
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_vertical"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="5dp"
+					android:text="And &lt;="
+					android:textSize="18sp" />
+				<EditText
+					android:id="@+id/max_zws"
+					android:layout_width="50dp"
+					android:layout_height="wrap_content"
+					android:layout_marginRight="10dp"
+					android:text="" />
+			</LinearLayout>
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_horizontal"
+				android:layout_marginTop="10dp"
+				android:orientation="horizontal" >
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_vertical"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="16dp"
+					android:text="查询日期"
+					android:textSize="18sp" />
+				<Button
+					android:id="@+id/bt_kssj"
+					android:layout_width="150dp"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_vertical"
+					android:background="#66ffffff"
+					android:textColor="#ffffff"
+					android:textSize="18sp" />
+			</LinearLayout>
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_horizontal"
+				android:layout_marginTop="10dp"
+				android:orientation="horizontal"
+				android:visibility="gone" >
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_vertical"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="16dp"
+					android:text="结束时间"
+					android:textSize="18sp" />
+				<Button
+					android:id="@+id/bt_jssj"
+					android:layout_width="150dp"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_vertical"
+					android:background="#66ffffff"
+					android:textColor="#ffffff"
+					android:textSize="18sp" />
+			</LinearLayout>
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_horizontal"
+				android:layout_marginTop="10dp"
+				android:orientation="horizontal" >
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_vertical"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="50dp"
+					android:text="星期"
+					android:textSize="18sp" />
+				<Button
+					android:id="@+id/bt_xqj"
+					android:layout_width="150dp"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_vertical"
+					android:background="#66ffffff"
+					android:textColor="#ffffff"
+					android:textSize="18sp" />
+			</LinearLayout>
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_horizontal"
+				android:layout_marginTop="10dp"
+				android:orientation="horizontal" >
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_vertical"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="8dp"
+					android:text="单周/双周"
+					android:textSize="18sp" />
+				<Button
+					android:id="@+id/bt_ddlDsz"
+					android:layout_width="150dp"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_vertical"
+					android:background="#66ffffff"
+					android:textColor="#ffffff"
+					android:textSize="18sp" />
+			</LinearLayout>
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_horizontal"
+				android:layout_marginTop="10dp"
+				android:orientation="horizontal" >
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_vertical"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="32dp"
+					android:text="时间段"
+					android:textSize="18sp" />
+				<Button
+					android:id="@+id/bt_sjd"
+					android:layout_width="150dp"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_vertical"
+					android:background="#66ffffff"
+					android:textColor="#ffffff"
+					android:textSize="18sp" />
+			</LinearLayout>
+			<Button
+				android:id="@+id/bt_query_classroom"
+				android:layout_width="250dp"
+				android:layout_height="45dp"
+				android:layout_marginTop="20dp"
+				android:background="@drawable/btn_login_selector"
+				android:text="查询空教室"
+				android:textColor="#fff"
+				android:textSize="20sp" />
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

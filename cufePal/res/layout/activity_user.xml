@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#ffffff"
+	android:orientation="vertical" >
+	<FrameLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@drawable/header"
+		android:orientation="vertical" >
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="top"
+			android:layout_marginTop="30dip"
+			android:orientation="horizontal" >
+			<FrameLayout
+				android:layout_width="60.0dip"
+				android:layout_height="60.0dip"
+				android:layout_marginLeft="15dip" >
+				<ImageView
+					android:id="@+id/userface"
+					android:layout_width="fill_parent"
+					android:layout_height="fill_parent"
+					android:src="@drawable/icon" />
+			</FrameLayout>
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="15dip"
+				android:layout_marginTop="10dip"
+				android:gravity="center_horizontal"
+				android:orientation="vertical" >
+				<TextView
+					android:id="@+id/tv_xm"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="5dip"
+					android:text="姓名"
+					android:textColor="#ffffff"
+					android:textSize="20sp" />
+				<TextView
+					android:id="@+id/tv_xh"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="5dip"
+					android:text="学号"
+					android:textColor="#ffffff"
+					android:textSize="15sp" />
+			</LinearLayout>
+		</LinearLayout>
+		<!-- 简介 -->
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="30dip"
+			android:layout_gravity="bottom"
+			android:background="#22000000"
+			android:orientation="horizontal" >
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_vertical"
+				android:layout_marginLeft="10.0dip"
+				android:text="注：如要修改信息，请登录官网修改"
+				android:textColor="#ffffff" />
+		</LinearLayout>
+	</FrameLayout>
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent" >
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical" >
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="5dip"
+				android:layout_marginRight="5dip"
+				android:layout_marginTop="1dip"
+				android:background="@drawable/more_item_press"
+				android:gravity="center_vertical"
+				android:orientation="horizontal" >
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="15dip"
+					android:text="性别:"
+					android:textColor="#000000"
+					android:textSize="20sp" />
+				<TextView
+					android:id="@+id/tv_lbl_xb"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="25dip"
+					android:text=""
+					android:textColor="#000000"
+					android:textSize="20sp" />
+			</LinearLayout>
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="5dip"
+				android:layout_marginRight="5dip"
+				android:layout_marginTop="1dip"
+				android:background="@drawable/more_item_press"
+				android:gravity="center_vertical"
+				android:orientation="horizontal" >
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="15dip"
+					android:text="出生日期:"
+					android:textColor="#000000"
+					android:textSize="20sp" />
+				<TextView
+					android:id="@+id/tv_lbl_csrq"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="25dip"
+					android:text=""
+					android:textColor="#000000"
+					android:textSize="20sp" />
+			</LinearLayout>
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="5dip"
+				android:layout_marginRight="5dip"
+				android:layout_marginTop="1dip"
+				android:background="@drawable/more_item_press"
+				android:gravity="center_vertical"
+				android:orientation="horizontal" >
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="15dip"
+					android:text="民族:"
+					android:textColor="#000000"
+					android:textSize="20sp" />
+				<TextView
+					android:id="@+id/tv_lbl_mz"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="25dip"
+					android:text=""
+					android:textColor="#000000"
+					android:textSize="20sp" />
+			</LinearLayout>
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="5dip"
+				android:layout_marginRight="5dip"
+				android:layout_marginTop="1dip"
+				android:background="@drawable/more_item_press"
+				android:gravity="center_vertical"
+				android:orientation="horizontal" >
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="15dip"
+					android:text="政治面貌:"
+					android:textColor="#000000"
+					android:textSize="20sp" />
+				<TextView
+					android:id="@+id/tv_lbl_zzmm"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="25dip"
+					android:text=""
+					android:textColor="#000000"
+					android:textSize="20sp" />
+			</LinearLayout>
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="5dip"
+				android:layout_marginRight="5dip"
+				android:layout_marginTop="1dip"
+				android:background="@drawable/more_item_press"
+				android:gravity="center_vertical"
+				android:orientation="horizontal" >
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="15dip"
+					android:text="来源地区:"
+					android:textColor="#000000"
+					android:textSize="20sp" />
+				<TextView
+					android:id="@+id/tv_lbl_lydq"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="25dip"
+					android:text=""
+					android:textColor="#000000"
+					android:textSize="20sp" />
+			</LinearLayout>
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="5dip"
+				android:layout_marginRight="5dip"
+				android:layout_marginTop="1dip"
+				android:background="@drawable/more_item_press"
+				android:gravity="center_vertical"
+				android:orientation="horizontal" >
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="15dip"
+					android:text="学院:"
+					android:textColor="#000000"
+					android:textSize="20sp" />
+				<TextView
+					android:id="@+id/tv_lbl_xy"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="25dip"
+					android:text=""
+					android:textColor="#000000"
+					android:textSize="20sp" />
+			</LinearLayout>
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="5dip"
+				android:layout_marginRight="5dip"
+				android:layout_marginTop="1dip"
+				android:background="@drawable/more_item_press"
+				android:gravity="center_vertical"
+				android:orientation="horizontal" >
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="15dip"
+					android:text="专业名称:"
+					android:textColor="#000000"
+					android:textSize="20sp" />
+				<TextView
+					android:id="@+id/tv_lbl_zymc"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="25dip"
+					android:text=""
+					android:textColor="#000000"
+					android:textSize="20sp" />
+			</LinearLayout>
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="5dip"
+				android:layout_marginRight="5dip"
+				android:layout_marginTop="1dip"
+				android:background="@drawable/more_item_press"
+				android:gravity="center_vertical"
+				android:orientation="horizontal" >
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="15dip"
+					android:text="行政班："
+					android:textColor="#000000"
+					android:textSize="20sp" />
+				<TextView
+					android:id="@+id/tv_lbl_xzb"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="25dip"
+					android:text=""
+					android:textColor="#000000"
+					android:textSize="20sp" />
+			</LinearLayout>
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="5dip"
+				android:layout_marginRight="5dip"
+				android:layout_marginTop="1dip"
+				android:background="@drawable/more_item_press"
+				android:gravity="center_vertical"
+				android:orientation="horizontal" >
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="15dip"
+					android:text="学制:"
+					android:textColor="#000000"
+					android:textSize="20sp" />
+				<TextView
+					android:id="@+id/tv_lbl_xz"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="25dip"
+					android:text=""
+					android:textColor="#000000"
+					android:textSize="20sp" />
+			</LinearLayout>
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="5dip"
+				android:layout_marginRight="5dip"
+				android:layout_marginTop="1dip"
+				android:background="@drawable/more_item_press"
+				android:gravity="center_vertical"
+				android:orientation="horizontal" >
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="15dip"
+					android:text="学籍状态:"
+					android:textColor="#000000"
+					android:textSize="20sp" />
+				<TextView
+					android:id="@+id/tv_lbl_xjzt"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="25dip"
+					android:text=""
+					android:textColor="#000000"
+					android:textSize="20sp" />
+			</LinearLayout>
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="5dip"
+				android:layout_marginRight="5dip"
+				android:layout_marginTop="1dip"
+				android:background="@drawable/more_item_press"
+				android:gravity="center_vertical"
+				android:orientation="horizontal" >
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="15dip"
+					android:text="当前所在级:"
+					android:textColor="#000000"
+					android:textSize="20sp" />
+				<TextView
+					android:id="@+id/tv_lbl_dqszj"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="25dip"
+					android:text=""
+					android:textColor="#000000"
+					android:textSize="20sp" />
+			</LinearLayout>
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="5dip"
+				android:layout_marginRight="5dip"
+				android:layout_marginTop="1dip"
+				android:background="@drawable/more_item_press"
+				android:gravity="center_vertical"
+				android:orientation="horizontal" >
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="15dip"
+					android:text="考生号:"
+					android:textColor="#000000"
+					android:textSize="20sp" />
+				<TextView
+					android:id="@+id/tv_lbl_ksh"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="25dip"
+					android:text=""
+					android:textColor="#000000"
+					android:textSize="20sp" />
+			</LinearLayout>
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="5dip"
+				android:layout_marginRight="5dip"
+				android:layout_marginTop="1dip"
+				android:background="@drawable/more_item_press"
+				android:gravity="center_vertical"
+				android:orientation="horizontal" >
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="15dip"
+					android:text="邮箱:"
+					android:textColor="#000000"
+					android:textSize="20sp" />
+				<TextView
+					android:id="@+id/tv_dzyxdz"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="25dip"
+					android:text=""
+					android:textColor="#000000"
+					android:textSize="20sp" />
+			</LinearLayout>
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="5dip"
+				android:layout_marginRight="5dip"
+				android:layout_marginTop="1dip"
+				android:background="@drawable/more_item_press"
+				android:gravity="center_vertical"
+				android:orientation="horizontal" >
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="15dip"
+					android:text="联系电话:"
+					android:textColor="#000000"
+					android:textSize="20sp" />
+				<TextView
+					android:id="@+id/tv_lxdh"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="25dip"
+					android:text=""
+					android:textColor="#000000"
+					android:textSize="20sp" />
+			</LinearLayout>
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="5dip"
+				android:layout_marginRight="5dip"
+				android:layout_marginTop="1dip"
+				android:background="@drawable/more_item_press"
+				android:gravity="center_vertical"
+				android:orientation="horizontal" >
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="15dip"
+					android:text="身份证号:"
+					android:textColor="#000000"
+					android:textSize="20sp" />
+				<TextView
+					android:id="@+id/tv_lbl_sfzh"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="25dip"
+					android:text=""
+					android:textColor="#000000"
+					android:textSize="20sp" />
+			</LinearLayout>
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="5dip"
+				android:layout_marginRight="5dip"
+				android:layout_marginTop="1dip"
+				android:background="@drawable/more_item_press"
+				android:gravity="center_vertical"
+				android:orientation="horizontal" >
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="15dip"
+					android:text="学历层次:"
+					android:textColor="#000000"
+					android:textSize="20sp" />
+				<TextView
+					android:id="@+id/tv_lbl_CC"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="25dip"
+					android:text=""
+					android:textColor="#000000"
+					android:textSize="20sp" />
+			</LinearLayout>
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="5dip"
+				android:layout_marginRight="5dip"
+				android:layout_marginTop="1dip"
+				android:background="@drawable/more_item_press"
+				android:gravity="center_vertical"
+				android:orientation="horizontal" >
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="15dip"
+					android:text="姓名拼音:"
+					android:textColor="#000000"
+					android:textSize="20sp" />
+				<TextView
+					android:id="@+id/tv_tbxmpyo"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="25dip"
+					android:text=""
+					android:textColor="#000000"
+					android:textSize="20sp" />
+			</LinearLayout>
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

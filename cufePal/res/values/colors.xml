@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="text_color">#FFFFFF</color>
+	<color name="splash_color">#A2CD5A</color>
+	<color name="toolbar_color">#A2CD5A</color>
+</resources>
